@@ -1,0 +1,44 @@
+// grid
+
+.grid {
+  max-width: 157rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.strapline {
+  @include text('sm', 500);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.button-primary {
+  background: $yellow-400;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  max-width: 22rem;
+  font-weight: 700;
+  color: $red-900;
+  transition: background, box-shadow 0.2s linear;
+  &:hover {
+    background: $yellow-300;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@each $sizeName, $size in $titles {
+  .title-#{$sizeName} {
+    @include title($sizeName);
+  }
+}
+
+@each $sizeName, $size in $text {
+  .text-#{$sizeName} {
+    font-size: nth($size, 1);
+    @include mq(420px) {
+      font-size: nth($size, 2);
+    }
+  }
+}

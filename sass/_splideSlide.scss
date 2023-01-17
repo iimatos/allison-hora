@@ -1,0 +1,40 @@
+.home-slide {
+  position: relative;
+  .navigation {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4rem;
+    z-index: 5;
+    @include mq(480px) {
+      padding: 0 2rem;
+    }
+    svg {
+      max-width: 7.3rem;
+      max-height: 7.3rem;
+
+      @include mq(480px) {
+        max-width: 3.6rem;
+        max-height: 3.6rem;
+      }
+    }
+
+    .navigation--left {
+      transform: rotate(180deg);
+    }
+
+    .navigation--left,
+    .navigation--right {
+      background: none;
+    }
+  }
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,82 @@
+// Colors - Red
+
+$red-50: #fae6e6;
+$red-100: #efb0b0;
+$red-200: #e88a8a;
+$red-300: #dd5454;
+$red-400: #d63333;
+$red-500: #cc0000;
+$red-600: #ba0000;
+$red-700: #910000;
+$red-800: #700000;
+$red-900: #560000;
+
+//  yellow
+$yellow-50: #fff8e8;
+$yellow-100: #ffeab8;
+$yellow-200: #ffe096;
+$yellow-300: #ffd166;
+$yellow-400: #ffc949;
+$yellow-500: #ffbb1b;
+$yellow-600: #e8aa19;
+$yellow-700: #b58513;
+$yellow-800: #8c670f;
+$yellow-900: #6b4f0b;
+
+// neutral
+$n-1: #ffffff;
+$n-2: #e9ebf8;
+$n-3: #f6f6f6;
+$n-4: #f1f1f1;
+$n-5: #dcdcdc;
+$n-6: #c5c4c4;
+$n-7: #969595;
+$n-8: #676666;
+$n-9: #545353;
+$n-10: #383737;
+$n-11: #313030;
+$n-12: #282727;
+$n-13: #151414;
+
+// Colors - Red
+$colors: (
+  'red': (
+    'red-50': #fae6e6,
+    'red-100': #efb0b0,
+    'red-200': #e88a8a,
+    'red-300': #dd5454,
+    'red-400': #d63333,
+    'red-500': #cc0000,
+    'red-600': #ba0000,
+    'red-700': #910000,
+    'red-800': #700000,
+    'red-900': #560000,
+  ),
+  'yellow': (
+    'yellow-50': #fff8e8,
+    'yellow-100': #ffeab8,
+    'yellow-200': #ffe096,
+    'yellow-300': #ffd166,
+    'yellow-400': #ffc949,
+    'yellow-500': #ffbb1b,
+    'yellow-600': #e8aa19,
+    'yellow-700': #b58513,
+    'yellow-800': #8c670f,
+    'yellow-900': #6b4f0b,
+    'n-1': #ffffff,
+  ),
+  'neutral': (
+    'n-2': #e9ebf8,
+    'n-3': #f6f6f6,
+    'n-4': #f1f1f1,
+    'n-5': #dcdcdc,
+    'n-6': #c5c4c4,
+    'n-7': #969595,
+    'n-8': #676666,
+    'n-9': #545353,
+    'n-10': #383737,
+    'n-11': #313030,
+    'n-12': #282727,
+    'n-13': #151414,
+  ),
+);

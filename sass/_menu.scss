@@ -1,0 +1,83 @@
+.menu {
+  width: 100%;
+  background: $n-10;
+  color: $yellow-500;
+  @include text('std', 600);
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .menu--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      max-width: 12rem;
+    }
+
+    .menu--mobile {
+      display: none;
+      padding: 1rem 1rem 2rem 1rem;
+      background: none;
+      @include mq(768px) {
+        display: flex;
+      }
+      .line {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: $yellow-300;
+        box-shadow: 0 6px 0 $yellow-300, 0 12px 0 $yellow-300;
+      }
+      &.active {
+        display: flex;
+        ~ .menu--itens {
+          @include mq(768px) {
+            display: flex;
+            flex-direction: column;
+            width: 24rem;
+            gap: 1.2rem;
+            background: $red-600;
+            position: absolute;
+            top: 100%;
+            right: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+          }
+          .menu--item {
+            @include mq(768px) {
+              color: $n-2;
+              border-bottom: 1px solid $red-100;
+              border-radius: 2px;
+              &:hover {
+                color: $n-1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      position: relative;
+      display: flex;
+
+      .menu--itens {
+        display: flex;
+        gap: 3rem;
+        @include mq(768px) {
+          display: none;
+        }
+        .menu--item {
+          padding: 0.8rem;
+          cursor: pointer;
+          &:hover {
+            color: $yellow-200;
+          }
+        }
+      }
+    }
+  }
+}

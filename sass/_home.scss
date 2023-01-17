@@ -1,0 +1,321 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 95);
+  @include mq(960px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.hero-content {
+  width: 48%;
+  padding: 12.8rem 0;
+  @include mq(1024px) {
+    padding: 6.4rem 0;
+  }
+  @include mq(960px) {
+    width: 90%;
+  }
+
+  h1 {
+    color: $red-900;
+    margin-bottom: 2.4rem;
+    @include title('lg');
+    span {
+      color: $yellow-500;
+    }
+  }
+  p {
+    @include text('md');
+    margin-bottom: 2.4rem;
+  }
+}
+
+.position-produtos {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 84rem;
+  z-index: -1;
+  @include mq(960px) {
+    position: static;
+    display: block;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+    max-height: initial;
+  }
+
+  .produtos-wrapper {
+    grid-column: 2;
+    @include mq(1024px) {
+      max-height: 64rem;
+    }
+    @include mq(960px) {
+      max-height: initial;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      border-radius: 0 0 0 120px;
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      @include mq(1024px) {
+        height: 100%;
+        object-fit: cover;
+      }
+      @include mq(960px) {
+        border-radius: 0 0 24px 24px;
+        box-shadow: initial;
+      }
+    }
+  }
+}
+
+.linha-content {
+  padding: 6.4rem 0;
+  max-width: 56rem;
+  .title-md {
+    color: $red-900;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: space-around;
+  padding: 16.8rem 2rem;
+  @include mq(768px) {
+    flex-direction: column;
+    padding: 12.8rem 2rem;
+  }
+  @include mq(480px) {
+    padding: 6.4rem 2rem;
+  }
+
+  .brand-mockup {
+    @include mq(768px) {
+      max-width: 48rem;
+      align-self: center;
+    }
+  }
+
+  .brand-content {
+    max-width: 77rem;
+    flex-shrink: 2;
+    h2 {
+      color: $red-900;
+      text-transform: uppercase;
+      margin: 0.8rem 0 2.4rem 0;
+    }
+    .button-primary {
+      margin-top: 3.6rem;
+    }
+  }
+}
+
+.local-title {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  @include mq(768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  h2 {
+    color: $red-900;
+    text-transform: uppercase;
+    max-width: 40rem;
+  }
+}
+
+.local-informacoes {
+  display: flex;
+  gap: 6.4rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6.4rem 0;
+  @include mq(1200px) {
+    flex-direction: column;
+  }
+  .local-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    @include mq(1200px) {
+      justify-content: center;
+    }
+    .local-lista--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      width: calc(50% - 1.6rem);
+      min-width: 24rem;
+      max-width: 27rem;
+      padding: 3.6rem;
+      border-radius: 24px;
+      background: linear-gradient(to top, $red-900, #820000);
+      color: $n-1;
+      text-align: center;
+
+      @include mq(560px) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .local-imagem {
+    max-width: 87rem;
+    height: 40rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2.4rem;
+      flex: 0 2;
+    }
+  }
+}
+
+.sustentabilidade {
+  .grid {
+    padding: 0;
+  }
+  .sustentabilidade-minigrid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 140rem;
+    gap: 3rem;
+    padding: 0 2rem;
+    margin: 12.8rem 0 6.4rem auto;
+    @include mq(768px) {
+      flex-direction: column;
+    }
+    .sustentabilidade-title {
+      text-transform: uppercase;
+      h2 {
+        color: $red-900;
+      }
+    }
+    .sustentabilidade-content {
+      max-width: 84rem;
+    }
+  }
+  .sustentabilidade-image {
+    position: relative;
+    height: 100%;
+    max-height: 73rem;
+    .sustentabilidade-image--position {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.marquee {
+  padding: 4.8rem 2rem;
+  background: $yellow-500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+  p {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.contato {
+  padding: 6.4rem 2rem;
+  .title-md {
+    text-transform: uppercase;
+    color: $red-900;
+    margin-bottom: 3.6rem;
+  }
+  .contato-layout {
+    display: flex;
+    @include mq(960px) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+    .contato-localizacoes {
+      width: 37.5%;
+      button {
+        display: block;
+        padding: 0.8rem;
+        background: none;
+        border-bottom: 2px solid transparent;
+        transition: border 0.2s linear;
+        @include text('std', 600);
+        &:hover,
+        &.active {
+          border-bottom: 2px solid $yellow-300;
+        }
+      }
+      button + button {
+        margin-top: 2.4rem;
+      }
+    }
+    .contato-mapa {
+      width: 100%;
+      max-width: 67rem;
+      .aspect-ratio {
+        position: relative;
+        width: 100%;
+        padding-bottom: 52.65%;
+        iframe {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 2.4rem;
+          box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  color: $n-1;
+  background: $red-900;
+  .footer--upper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    padding: 6.4rem 2rem;
+    gap: 4.8rem;
+    @include mq(480px) {
+      grid-template-columns: repeat(
+        auto-fill minmax(calc(18rem - 4.8rem), 1fr)
+      );
+      gap: 4.8rem;
+    }
+  }
+
+  .footer--bottom {
+    text-align: center;
+    padding: 2rem;
+    background: $red-400;
+  }
+}
+
+.col-footer-links {
+  .footer-link-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+  }
+  .footer-link + .footer-link {
+    margin-top: 2.4rem;
+  }
+}

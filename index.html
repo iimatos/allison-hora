@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:url" content="http://www.example.com" />
+    <meta property="og:title" content="Website page title" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Example" />
+    <meta property="og:image" content="http://www.example.com/image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@your_sites_username" />
+    <link
+      rel="icon"
+      href="path/to/favicon-62.png"
+      sizes="62x62"
+      type="image/png"
+    />
+    <title>Delicia da Hora</title>
+  </head>
+  <body>
+    <svg viewBox="0 0 73 73" style="display: none">
+      <symbol id="arrow"  viewBox="0 0 73 73">
+        <path
+          d="M69 37C69 54.6731 54.6731 69 37 69C19.3269 69 5 54.6731 5 37C5 19.3269 19.3269 5 37 5C54.6731 5 69 19.3269 69 37Z"
+          fill="#282727"
+        />
+        <path
+          d="M49.7071 37.7071C50.0976 37.3166 50.0976 36.6834 49.7071 36.2929L43.3431 29.9289C42.9526 29.5384 42.3195 29.5384 41.9289 29.9289C41.5384 30.3195 41.5384 30.9526 41.9289 31.3431L47.5858 37L41.9289 42.6569C41.5384 43.0474 41.5384 43.6805 41.9289 44.0711C42.3195 44.4616 42.9526 44.4616 43.3431 44.0711L49.7071 37.7071ZM22 38H35.5V36H22V38ZM35.5 38L49 38V36L35.5 36V38Z"
+          fill="#FDFDFD"
+        />
+      </symbol>
+    </svg>
+
+    <header class="menu">
+      <div class="menu--wrapper grid">
+        <img class="logo" src="assets/images/svg/logo.svg" alt="Delícia da hora">
+        <nav class="menu--nav ">
+          <button class="menu--mobile" aria-label='Menu' aria-controls="menu--itens" aria-expanded="false">
+            <span class="line"></span>
+          </button>
+          <ul class="menu--itens">
+            <li class="menu--item">Home</li>
+            <li class="menu--item">Contato</li>
+            <li class="menu--item">Empreender</li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrapper-hero grid">
+          <div class="hero-content">
+            <div><span class="strapline">Qualidade e crescimento</span></div>
+            <h1>A <span>maior distribuidora</span> de alimentos do Brasil</h1>
+            <p>
+              A Delícia da Hora tem a missão de levar para cada família uma nova
+              realidade de vida, com seus produtos de extrema qualidade e ainda
+              uma oportunidade de construir uma renda extra.
+            </p>
+            <a href="#" class="button-primary">Quero empreender</a>
+          </div>
+        </div>
+        <div class="position-produtos">
+          <div class="produtos-wrapper">
+            <img
+              src="assets/images/hero-produtos.jpg"
+              srcset="assets/images/hero-produtos@2x.jpg 2x, assets/images/hero-produtos560.jpg 900w, assets/images/hero-produtos400.jpg 480w "
+              alt="Produtos"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="linha-produtos">
+        <div class="grid">
+          <div class="linha-content">
+            <h2 class="title-md">
+              Nossa linha de produtos especialmente criada para você
+            </h2>
+            <p class="text-md">Criada com....</p>
+          </div>
+        </div>
+
+        <section class="splide home-slide" aria-label="Splide Basic HTML Example">
+          <div class="splide__arrows navigation">
+
+            <button class="splide__arrow splide__arrow--prev navigation--left">
+              <svg><use xlink:href="#arrow"></use></svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next navigation--right">
+              <svg ><use xlink:href="#arrow"></use></svg>
+            </button>
+
+          </div>
+
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-01.jpg"
+                  srcset="assets/images/produto-01@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-02.jpg"
+                  srcset="assets/images/produto-02@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-03.jpg"
+                  srcset="assets/images/produto-03@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-01.jpg"
+                  srcset="assets/images/produto-01@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-02.jpg"
+                  srcset="assets/images/produto-02@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="assets/images/produto-03.jpg"
+                  srcset="assets/images/produto-03@2x.jpg 2x"
+                  alt="Produto"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <section class="brand grid">
+        <div class="brand-mockup">
+          <img
+            src="assets/images/mockup-iphone.png"
+            alt="Mockup com a marca no celular"
+          />
+        </div>
+        <article class="brand-content">
+          <p><span class="strapline">Conheça a marca</span></p>
+          <h2 class="title-md">A delícia da hora</h2>
+          <p class="text-sm">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum
+          </p>
+          <a href="#" class="button-primary">Quero saber mais</a>
+        </article>
+      </section>
+
+      <section class="local grid">
+        <div class="local-title">
+          <h2 class="title-md">Estrutura e sede administrativa</h2>
+          <p class="text-md">Estamos localizados em</p>
+        </div>
+        <div class="local-informacoes">
+          <ul class="local-lista">
+            <li class="local-lista--item">
+              <img src="assets/images/svg/building.svg" alt="Estrutura" />
+              <h3 class="text-sm">Estrutura</h3>
+              <p>Mais de 1.200m² de área construída</p>
+            </li>
+            <li class="local-lista--item">
+              <img src="assets/images/svg/graph.svg" alt="Estrutura" />
+              <h3 class="text-sm">Departamentos</h3>
+              <p>38 departamentos prontos para atender você</p>
+            </li>
+            <li class="local-lista--item">
+              <img src="assets/images/svg/people.svg" alt="Estrutura" />
+              <h3 class="text-sm">Recursos Humanos</h3>
+              <p>Mais de 100 colaboradores diretos</p>
+            </li>
+            <li class="local-lista--item">
+              <img src="assets/images/svg/support.svg" alt="Estrutura" />
+              <h3 class="text-sm">Atendimento</h3>
+              <p>Call Center com mais de 30 atendentes</p>
+            </li>
+          </ul>
+          <div class="local-imagem">
+            <img
+              src="assets/images/sede.jpg"
+              srcset="assets/images/sede@2x.jpg 2x"
+              alt="Sede"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="sustentabilidade">
+        <div class="grid">
+          <div class="sustentabilidade-minigrid">
+            <div class="sustentabilidade-title">
+              <p><span class="strapline">Mantendo</span></p>
+              <h2 class="title-md">sustentabilidade</h2>
+            </div>
+            <article class="sustentabilidade-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                eget eros et massa blandit egestas at in dui. Curabitur
+                pellentesque nunc ac eleifend consequat. Ut at quam purus.
+                Aenean et lacus eu risus tristique feugiat. Maecenas dignissim
+                blandit risus in ornare. Proin non erat interdum, consequat ex
+                eget, tincidunt dolor. Cras sollicitudin lectus erat, tristique
+                aliquam risus sodales et. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Maecenas id commodo tellus. Donec
+                lobortis est a aliquet tempor. Vivamus leo ipsum, eleifend non
+                nunc eu, vehicula dictum enim. Aenean at volutpat erat, quis
+                semper mi. Maecenas ante nibh, volutpat pellentesque libero ut,
+                luctus varius sapien.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="sustentabilidade-image">
+          <div class="sustentabilidade-image--position">
+            <img
+              src="assets/images/sustentabilidade-mundo.png"
+              alt="O mundo sobre uma mão, sustentabilidade"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee">
+        <p class="text-md">Liberdade Financeira</p>
+        <p class="text-md">Renda Extra</p>
+        <p class="text-md">Bem estar</p>
+        <p class="text-md">Realizar</p>
+      </section>
+
+      <section class="contato grid">
+        <h2 class="title-md">Onde nos encontrar</h2>
+
+        <div class="contato-layout">
+          <div class="contato-localizacoes">
+
+            <button class="local-opcao active" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.179386606745!2d-43.230051272252204!3d-22.98372901273908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5b3b414a15f%3A0xd19c10ba38a480d2!2sLeblon%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1673962372601!5m2!1spt-BR!2sbr">Local 1</button>
+            <button class="local-opcao" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0111617407006!2d-43.216201434341436!3d-22.94981604517915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1673962428096!5m2!1spt-BR!2sbr">Local 2</button>
+            <button class="local-opcao" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14693.495986259963!2d-43.1857553!3d-22.973270799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd523d20f9c53%3A0x693c6132635e6b0d!2sCopacabana%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1673962454835!5m2!1spt-BR!2sbr">Local 3</button>
+          </div>
+
+          <div class="contato-mapa">
+            <div class="aspect-ratio">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14692.357692415308!2d-43.2256739!3d-22.98373895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5b3b414a15f%3A0xd19c10ba38a480d2!2sLeblon%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1673906222892!5m2!1spt-BR!2sbr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer--upper grid">
+          <div class="col">
+            <ul class="col-footer-links">
+              <li class="footer-link-title">Titulo</li>
+              <li class="footer-link">Link 2</li>
+              <li class="footer-link">Link 3</li>
+              <li class="footer-link">Link 4</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="col-footer-links">
+              <li class="footer-link-title">Titulo</li>
+              <li class="footer-link">Link 2</li>
+              <li class="footer-link">Link 3</li>
+              <li class="footer-link">Link 4</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="col-footer-links">
+              <li class="footer-link-title">Titulo</li>
+              <li class="footer-link">Link 2</li>
+              <li class="footer-link">Link 3</li>
+              <li class="footer-link">Link 4</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="col-footer-links">
+              <li class="footer-link-title">Titulo</li>
+              <li class="footer-link">Link 2</li>
+              <li class="footer-link">Link 3</li>
+              <li class="footer-link">Link 4</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="col-footer-links">
+              <li class="footer-link-title">Titulo</li>
+              <li class="footer-link">Link 2</li>
+              <li class="footer-link">Link 3</li>
+              <li class="footer-link">Link 4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer--bottom">
+          <p class="text-sm">Política de Privacidade - CNPJ: *******</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@mixin title($key: 'lg', $weight: 700) {
+  @each $sizeName, $size in $titles {
+    @if $sizeName == $key {
+      font-size: nth($size, 1);
+      @include mq(960px) {
+        font-size: nth($size, 2);
+      }
+      @include mq(480px) {
+        font-size: nth($size, 3);
+      }
+    }
+  }
+
+  font-weight: $weight;
+  line-height: 120%;
+}
+
+@mixin text($key: 'std', $weight: 400) {
+  @each $sizeName, $size in $text {
+    @if $sizeName == $key {
+      font-size: nth($size, 1);
+      @include mq(420px) {
+        font-size: nth($size, 2);
+      }
+    }
+  }
+  font-weight: $weight;
+  line-height: 140%;
+}

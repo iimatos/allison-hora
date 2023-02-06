@@ -9,5 +9,5 @@ import navigationTabs from './navigationTabs';
 menu();
 verticalHeight();
 slide();
-handlePositionImage();
+// handlePositionImage();
 navigationTabs();
